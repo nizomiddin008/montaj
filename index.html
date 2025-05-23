@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Project</title>
+  <style>
+    body {
+      margin: 0; padding: 0;
+      font-family: Arial, sans-serif;
+      background: white;
+      overflow: hidden;
+    }
+    .icon {
+      position: fixed;
+      width: 50px;
+      opacity: 0.3;
+      animation: floatUp 25s linear infinite;
+    }
+    .icon.youtube { left: 10%; animation-delay: 0s; top: 100%; }
+    .icon.telegram { left: 30%; animation-delay: 5s; top: 100%; }
+    .icon.instagram { left: 60%; animation-delay: 10s; top: 100%; }
+    .icon.facebook { left: 80%; animation-delay: 15s; top: 100%; }
+    @keyframes floatUp {
+      0% { transform: translateY(0); opacity: 0.3; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-120vh); opacity: 0.3; }
+    }
+    .container {
+      position: relative;
+      z-index: 10;
+      max-width: 800px;
+      margin: 100px auto;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 40px;
+    }
+    .contact {
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="icon youtube" />
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" class="icon telegram" />
+  <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="icon instagram" />
+  <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="Facebook" class="icon facebook" />
+
+  <div class="container">
+    <h1>My Project</h1>
+    <p>Men video montaj bo‘yicha o‘rta darajada tajribaga egaman. Har kuni yangi narsalarni o‘rganib, sifatli va chiroyli videolar yaratishga harakat qilaman.</p>
+    <div class="contact">📧 Aloqa uchun: nizomiddinuzb.008@gmail.com</div>
+  </div>
+
+</body>
+</html>
